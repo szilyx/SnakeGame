@@ -1,5 +1,6 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 from snake import Snake
+from food import Food
 import time
 
 MainScreen = Screen()
@@ -9,6 +10,7 @@ MainScreen.title("Snake Game by F.Szilard")
 MainScreen.tracer(0)
 
 snake = Snake()
+food = Food()
 MainScreen.update()
 MainScreen.listen()
 MainScreen.onkey(snake.up, "Up")
